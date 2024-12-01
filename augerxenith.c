@@ -3,8 +3,8 @@
 
 EFI_STATUS EFIAPI efi_main(EFI_HANDLE ImageHandle, EFI_SYSTEM_TABLE *SystemTable)
 {
-	(void)ImageHandle;			// Otherwise you get a compiler warning, and nobody likes those.
-	
+	// Cast the argiument to void, to avoid a compiler warning.
+	(void)ImageHandle;
 	
 	// TEXT ATTR: FG = GREEN, BG = RED
 	SystemTable->ConOut->SetAttribute(SystemTable->ConOut, EFI_TEXT_ATTR(EFI_GREEN, EFI_BLACK));

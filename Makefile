@@ -1,5 +1,3 @@
-.POSIX:
-
 CC		= clang
 CFLAGS		= -target x86_64-unknown-windows -fuse-ld=lld-link -Wl,-subsystem:efi_application -Wl,-entry:efi_main -std=c17
 CWARNFLAGS	= -Wall -Wextra -Wpedantic
