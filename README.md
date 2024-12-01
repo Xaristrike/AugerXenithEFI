@@ -1,4 +1,4 @@
-# ExampleEFI Application
+# AugerXenith EFI Application
 
 This repository contains an EFI (Extensible Firmware Interface) application written in C.
 
@@ -53,15 +53,3 @@ To clean up build files and other temporary files:
 ```bash
 make clean
 ```
-
-## About the name "ExampleEFI"
-
-"ExampleEFI" is a temporary name.
-
-During development, I was planning
-
-to name this application "AugerXenith"
-
-after one of my favorite Doom WADs.
-
-Maybe this will happen sometime in the future.
