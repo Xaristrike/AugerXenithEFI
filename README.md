@@ -1,49 +1,48 @@
-# AugerXenith EFI Application
+# AugerXenith EFI
 
-This repository contains an EFI (Extensible Firmware Interface) application written in C.
+This repository contains a simple EFI (Extensible Firmware Interface) application written in C.
 
 ## Prerequisites
 
-### !!!This application is made to run in a Linux environment!!!
+### AugerXenith is made to run on a linux system. Instructions for building it on windows will be here soon.
 
-Before running this application, ensure you have the following tools and dependencies installed:
+Before building, you need the following tools and dependencies:
 
-- `clang` for compiling.
-- `mkfs.vfat` utility for creating the file system needed.
-- `make` for building.
-- `qemu-system` for running.
+- `clang` for compiling C.
+- `mkfs.vfat` for creating the file system.
+- `make` for building it.
+- `qemu-system` for running it.
 
 ## Installing prerequisites
 
-Install all the packages needed:
+Install all the packages needed (Debian, Ubuntu):
 ```bash
 sudo apt install make clang dosfstools qemu-system
 ```
 
 ## Building
 
-To build the EFI application:
+To build it:
 
-1. **Clone Repository:**
+1. **Clone the repository:**
 ```bash
-git clone https://github.com/Xaristrike/ExampleEFI
+git clone https://github.com/Xaristrike/AugerXenithEFI.git
 ```
 ```bash
-cd ExampleEfi
+cd AugerXenithEFI
 ```
-2. **Compile the Application:**
+2. **Compile:**
 ```bash
 make
 ```
 
-## Running with QEMU
-To run the EFI application using QEMU:
+## Running
+To run it using QEMU:
 ```bash
 make qemu
 ```
 
-## Running in Text Mode with QEMU
-To run the EFI application in text mode, where QEMU outputs to the terminal:
+To run it in text mode, QEMU will use the terminal window as the output:
 ```bash
 make qemunographic
 ```
