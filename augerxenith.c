@@ -13,7 +13,7 @@ EFI_STATUS EFIAPI efi_main(EFI_HANDLE ImageHandle, EFI_SYSTEM_TABLE *SystemTable
 	SystemTable->ConOut->ClearScreen(SystemTable->ConOut);
 	
 	// HELLO THE WORLD
-	SystemTable->ConOut->OutputString(SystemTable->ConOut, u"HELLO WORLD OF EFI HAHAHA!\n");
+	SystemTable->ConOut->OutputString(SystemTable->ConOut, u"Hello, i am your bios and i love you.\n");
 	
 	// TEXT ATTR: FG = YELLOW, BG = BLACK
 	SystemTable->ConOut->SetAttribute(SystemTable->ConOut, EFI_TEXT_ATTR(EFI_YELLOW, EFI_BLACK));

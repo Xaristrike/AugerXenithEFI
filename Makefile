@@ -3,7 +3,7 @@ CFLAGS		= -target x86_64-unknown-windows -fuse-ld=lld-link -Wl,-subsystem:efi_ap
 CWARNFLAGS	= -Wall -Wextra -Wpedantic
 CEXTRAFLAGS	= -ffreestanding -nostdlib -mno-red-zone
 
-SRC		= efi.c
+SRC		= augerxenith.c
 TARGET		= BOOTX64.EFI
 IMG		= boot.img
 MKFS		= mkfs.vfat
