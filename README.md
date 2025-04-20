@@ -9,6 +9,7 @@ This repository contains a simple EFI (Extensible Firmware Interface) applicatio
 Before building, you need the following tools and dependencies:
 
 - `clang` for compiling C.
+- `lld` for linking the executable.
 - `mkfs.vfat` for creating the file system.
 - `make` for building it.
 - `qemu-system` for running it.
@@ -17,7 +18,7 @@ Before building, you need the following tools and dependencies:
 
 Install all the packages needed (Debian, Ubuntu):
 ```bash
-sudo apt install make clang dosfstools qemu-system
+sudo apt install make clang dosfstools qemu-system lld
 ```
 
 ## Building
