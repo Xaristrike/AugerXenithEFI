@@ -13,19 +13,19 @@ EFI_STATUS EFIAPI efi_main(EFI_HANDLE ImageHandle, EFI_SYSTEM_TABLE *SystemTable
 	SystemTable->ConOut->ClearScreen(SystemTable->ConOut);
 	
 	// HELLO THE WORLD
-	SystemTable->ConOut->OutputString(SystemTable->ConOut, u"Hello world.\n");
+	SystemTable->ConOut->OutputString(SystemTable->ConOut, u"Hello world.\r\n");
 	
 	// TEXT ATTR: FG = YELLOW, BG = BLACK
 	SystemTable->ConOut->SetAttribute(SystemTable->ConOut, EFI_TEXT_ATTR(EFI_YELLOW, EFI_BLACK));
 	
 	// PRINT THE MESSAGE
-	SystemTable->ConOut->OutputString(SystemTable->ConOut, u"Press the 'ANY' key to shutdown\n");
+	SystemTable->ConOut->OutputString(SystemTable->ConOut, u"Press the 'ANY' key to shutdown.\r\n");
 	
 	// TEXT ATTR: FG = RED, BG = BLACK
 	SystemTable->ConOut->SetAttribute(SystemTable->ConOut, EFI_TEXT_ATTR(EFI_RED, EFI_BLACK));
 	
 	// PRINT THE COOLER MESSAGE
-	SystemTable->ConOut->OutputString(SystemTable->ConOut, u"yes. the 'ANY' key. you heard me.\n");
+	SystemTable->ConOut->OutputString(SystemTable->ConOut, u"yes. the 'ANY' key. you heard me.\r\n");
 	
 	// TEXT ATTR: FG = CYAN, BG = BLACK
 	SystemTable->ConOut->SetAttribute(SystemTable->ConOut, EFI_TEXT_ATTR(EFI_CYAN, EFI_BLACK));
