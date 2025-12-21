@@ -10,7 +10,7 @@ MKFS		= mkfs.vfat
 
 DEVELDIR	= $(shell pwd)
 MOUNTDIR	= mymnt
-BOOTDIR		= mymnt/efi/boot
+BOOTDIR		= $(MOUNTDIR)/efi/boot
 EFIDIR		= efi
 
 QEMU		= qemu-system-x86_64
