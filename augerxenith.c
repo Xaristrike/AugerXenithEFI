@@ -30,6 +30,12 @@ EFI_STATUS EFIAPI efi_main(EFI_HANDLE ImageHandle, EFI_SYSTEM_TABLE *SystemTable
 	// TEXT ATTR: FG = CYAN, BG = BLACK
 	SystemTable->ConOut->SetAttribute(SystemTable->ConOut, EFI_TEXT_ATTR(EFI_CYAN, EFI_BLACK));
 	
+	// PRINT THE FINAL MESSAGE
+	SystemTable->ConOut->OutputString(SystemTable->ConOut, u"just press a key.\r\n");
+	
+	// TEXT ATTR: FG = GREEN, BG = RED
+	SystemTable->ConOut->SetAttribute(SystemTable->ConOut, EFI_TEXT_ATTR(EFI_GREEN, EFI_BLACK));
+	
 	// WAIT FOR KEYPRESS
 	EFI_INPUT_KEY key;
 	
